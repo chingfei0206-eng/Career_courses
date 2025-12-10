@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project4_1</title>
+</head>
+<body>
+    <script>
+        var input;
+        var i;
+        for (i = 0; i < 3; i++) {
+
+            input = prompt("請輸入密碼(密碼:******)：(已嘗試 " + i + " 次)");
+
+            //取消
+            if (input === null) {
+                window.open('', '_self').close();
+                break;
+            }
+
+            //密碼正確
+            if (input === "******") {
+                alert("登入成功");
+                break;
+            }
+        }
+
+        //嘗試三次但沒有成功
+        if (i === 3 && input !== "******") {
+            alert("......");
+            window.open('', '_self').close();
+        }
+    </script>
+</body>
+</html>

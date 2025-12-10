@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project2</title>
+</head>
+<body>
+    <h1>CSS</h1>
+    <!--基礎-->
+    <div style="color:red;font-size:20px">
+        <p>紅色的字</p>
+        <p style="color:blue;background-color:yellow">黃底藍字</p>
+        <p style="border:1px solid black">實線框</p>
+        <p style="border:5px dashed black;width:200px;height:100px">虛線框</p>
+    </div>
+    <hr>
+    <!--color-->  <!--https://www.w3schools.com/css/-->
+    <h3 style="color:#66ffcc">color1</h3>
+    <h3 style="color:chocolate">color2</h3>
+    <h3 style="color:rgb(153, 50, 204)">color3</h3>
+    <hr>
+    <!--paddimg & margin-->  <!--paddimg只能正數 margin可正可負-->
+    <div style="padding:20px;margin:20px;background-color:lightblue;border:3px solid darkblue">
+        一段文字
+    </div>
+    <div style="padding:20px 30px 40px 50px;margin-top:-40px;background-color:rgb(132, 223, 200);border:3px solid darkblue">
+        一段文字
+    </div>
+    <hr>
+    <!--float-->
+    <img src="photo2.png" width="200px" style="float:right;margin:5px">
+    <u1 style="float:left;padding:20px;margin:5px;background-color:darkorange;list-style-type: square">
+        <li>主頁</li>
+        <li>部落格</li>
+        <li>關於</li>
+        <li>聯絡我們</li>
+    </u1>
+    <p>一段好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長好長的文字</p>
+    <hr>
+    <!--display-->  <!--HTML有兩種預設顯示方式:block和inline-->
+    <p>正常p標籤</p>
+    <p style="display:inline">inline的p標籤</p>
+    <span>正常的span標籤</span>
+    <span style="display:block">block的span標籤</span>
+    <hr>
+    <!--position-->  <!--fixed=>隨網頁懸浮固定位置 relative=>根據原來的位置移動 absolute=>懸浮固定位置-->  
+    <div style="position:fixed;bottom:20px;right:20px;background-color:blue;width:80px;height:80px"></div>
+    <div style="position:relative;top:20px;left:30px;background-color:green;color:white;width:80px;height:80px">原來佔的位置仍在</div>
+    <div style="background-color:red;width:120px;height:120px"></div>
+      <!--若上層的div有定位，則下層absolute的div會受限於上層的div-->
+    <div style="padding:30px;margin:20px;border:3px solid red">
+        <div style="position:relative;padding:30px;border:3px solid red">
+            <div style="position:absolute;top:0px;right:0px;width:40px;height:40px;background-color:green"></div>
+        </div>
+    </div>
+    <hr>
+    <!--opacity & border-radius-->  <!--透明度(0~1) & 圓角(半徑最大到矩形的一半)-->
+    <p style="position:relative;top:60px;left:20px">文字</p>
+    <div style="opacity:0.5;border-radius:0px 20px;background-color:darkblue;width:80px;height:80px"></div>
+    <br>
+    <a href="project3.html" style="display:block">下一頁</a>
+    <a href="project1.html">home</a>
+</body>
+</html>

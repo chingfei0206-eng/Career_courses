@@ -1,0 +1,91 @@
+h3{
+    color:pink;
+}
+.a{
+    border:3px solid red;
+}
+.b,.d{
+    border:3px dashed deeppink;
+}
+.c{
+    border:5px solid blueviolet;
+}
+#word{
+    color:dimgray;
+}
+[type],h4:hover {
+    background-color:gray;
+}
+*{
+    background-color:khaki;
+}
+
+/*flex*/
+.container1{  /*控制容器本身*/
+    display:flex;
+}
+.container1 div{  /*控制容器裡的所有div*/
+    border:1px solid skyblue;
+    padding:10px;
+    width:100px;
+}
+/*order=>數字越小越左邊*/
+.box1{
+    flex:2;
+    order:2;
+}
+.box2{
+    flex:1;
+    order:1;
+}
+.box3{
+    flex:1;
+    order:3;
+}
+.container2{
+    display:flex;
+    flex-wrap:wrap;  /*自動換行*/
+    justify-content:flex-start;  /*center置中，flex-start容器最前，flex-end容器最後，space-around|*$**$**$*|，space-between|$*$*$|，space-evenly|*$*$*$*|(*剩餘空白&子div)*/
+}
+.container2 div{
+    border:1px solid skyblue;
+    padding:10px;
+    width:100px;
+    height:20px;
+}
+.container3{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;  /*column-reverse變由下到上，沒寫是預設row，row-reverse是由右至左*/
+    height:300px;
+    border:3px solid red;
+    justify-content:center;
+    align-content:center;  /*赤軸置中*/
+}
+.container3 div{
+    border:1px solid skyblue;
+    padding:10px;
+    width:100px;
+}
+
+/*animation*/
+@keyframes change-color{
+    0% {background-color:red;}
+    20% {background-color: orange;left:20px;}
+    40% {background-color:yellow;left:40px;}
+    60% {background-color: green;left:60px;}
+    80% {background-color:blue;left:80px;}
+    100% {background-color: purple;left:100px;}
+}
+.boxx{
+    width:200px;
+    height:200px;
+    background-color:darkgray;
+    position:relative
+}
+.boxx-animation{
+    animation-name:change-color;
+    animation-duration:5s;  /*執行一次多久*/
+    animation-iteration-count: infinite;  /*infinite改成數字則重複數次*/
+    animation-delay:1s;  /*網頁開啟後延遲1s執行*/
+}

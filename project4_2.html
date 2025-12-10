@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project4_2</title>
+</head>
+<body>
+    <script>
+        question=[
+            {
+                q:"1+1=?\n(a)1\n(b)2\n(c)3",
+                a:"b"
+            },
+            {
+                q:"1公尺等於幾公分?\n(a)1\n(b)10\n(c)100",
+                a:"c"
+            },
+            {
+                q:"這是第幾個問題?\n(a)1\n(b)2\n(c)3",
+                a:"c"
+            }
+        ]
+        var score=0;
+        for (var i=0;i<question.length;++i){
+            var res=prompt(question[i].q);
+            if (res==question[i].a){
+                score+=1;
+                alert("答對了");
+            }
+            else if (res===null){
+                break;
+            }
+            else{
+                alert("......");
+            }
+        }
+        if(i==question.length){
+            alert("你答對了"+score+"題!")
+        }
+    </script>
+</body>
+</html>

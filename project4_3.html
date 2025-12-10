@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project4_3</title>
+</head>
+<body>
+    <img id="img" src="photo1.png" width="300" style="display:block"/>
+    <button id="btn" onclick="handle_click(this)">按一下</button>  <!--this指的是button-->
+    <script>
+        //event listener寫法一
+        var num_click=1;
+        function handle_click(x){
+            if (num_click%10==0){
+                alert("(❁´◡`❁)")
+            }
+            x.innerText="再一下";
+            num_click+=1;
+        }
+        //event listener寫法二
+        var img=document.getElementById("img");
+        img.addEventListener("mouseover",function(){  //(偵測的事件,要執行的事)
+            this.src="photo2.png"
+        })
+        img.addEventListener("mouseout",function(){
+            this.src="photo1.png"
+        })
+    </script>
+    
+</body>
+</html>
